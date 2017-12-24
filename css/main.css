@@ -1,0 +1,443 @@
+ /*SPECIFICATION*/
+ 
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Open Sans', sans-serif;
+ }
+ ul,
+ p {
+     margin: 0;
+     padding: 0;
+ }
+ ul {
+     list-style: none;
+ }
+ a:hover {
+     text-decoration: none;
+ }
+ .ha-header {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     padding: 0;
+     z-index: 50;
+ }
+ .section-title {
+     margin-top: 103px;
+     text-align: center;
+     text-transform: uppercase;
+     font-weight: 700;
+     font-size: 36px;
+ }
+ :focus {
+     outline: none !important;
+     ;
+ }
+ /*MAIN MENU*/
+ 
+ .menu {
+     background-color: #fff;
+     height: 82px;
+ }
+ .menu-navigation__item {
+     margin-right: 25px;
+ }
+ .menu-navigation__item a {
+     font-size: 14px;
+     color: #000;
+ }
+ .menu-navigation__item a:after {
+     display: block;
+     content: "";
+     height: 2px;
+     width: 0%;
+     background-color: #f6641a;
+     transition: width .3s ease-in-out;
+ }
+ .menu-navigation__item a:hover:after,
+ .menu-navigation__item a:focus:after {
+     width: 100%;
+ }
+ .icon-phone {
+     width: 34px;
+     height: 34px;
+     margin-left: 30px;
+ }
+ .phone {
+     font-size: 16 px;
+     font-weight: 700;
+     margin-left: 12px;
+ }
+ .button {
+     color: #000;
+     cursor: pointer;
+     width: 100%;
+     text-align: center;
+     border: 1px solid #000;
+     border-radius: 10px;
+     padding: 8px 0;
+ }
+ .button:hover {
+     transition: 0.5s;
+     color: #fff;
+     background-color: #f6641a;
+     border: 1px solid #f6641a;
+ }
+ /*HEADER*/
+ 
+ .header {
+     background: url(../img/main-bg.jpg) no-repeat center / cover;
+ }
+ .slide-header {
+     background: url(../img/bg-slide.png) no-repeat calc(50% + 1400px);
+ }
+ .main-title {
+     margin-top: 230px;
+     font-weight: 700;
+     font-size: 48px;
+ }
+ .sub-title {
+     margin-top: 25px;
+     font-weight: 600;
+     font-size: 20px;
+     text-transform: uppercase;
+     margin-bottom: 230px;
+ }
+ /*ADVANTAGES*/
+ 
+ .advantages-img {
+     width: 80px;
+     height: 80px;
+ }
+ .adantages-text {
+     line-height: 28px;
+     font-size: 16px;
+     text-align: left;
+     margin-left: 30px;
+ }
+ .advantages-main-text {
+     font-weight: 700;
+     font-size: 18px;
+ }
+ .advantages_lesson {
+     margin-left: 157px;
+     margin-top: 198px;
+ }
+ .advantages_individually {
+     margin-left: 115px;
+     margin-top: 31px;
+ }
+ .advantages_free {
+     margin-left: 70px;
+     margin-top: 31px;
+ }
+ /*ABOUT*/
+ 
+ .about-block {
+     margin: 107px 0;
+ }
+ .about-block__item {
+     margin-bottom: 32px;
+ }
+ .about-block__text {
+     line-height: 24px;
+     font-size: 16px;
+ }
+ .about-block__img {
+     width: 16px;
+     height: 16px;
+     margin-right: 20px;
+     margin-top: 6px;
+ }
+ /*SLIDER*/
+ 
+ .slider {
+     margin-top: 0px;
+ }
+ .slick-track {
+     display: flex;
+     align-items: center;
+ }
+ .slick-slide {
+     opacity: 0.2;
+     height: 140px;
+ }
+ .slick-current {
+     opacity: 1;
+     width: 290px;
+     height: 180px;
+ }
+ .slick-dots {
+     bottom: -42px;
+ }
+ .slick-dots li button {
+     border: 1px dashed #000;
+     width: 10px;
+     height: 10px;
+     border-radius: 50%;
+ }
+ .slick-dots li.slick-active button {
+     background-color: #000;
+     border: 3px solid #000;
+     width: 10px;
+     height: 10px;
+     border-radius: 50%;
+ }
+ .slick-dots li button:before {
+     content: '';
+ }
+ /*FORMAT*/
+ 
+ .format {
+     padding-bottom: 103px;
+     background: url(../img/format-bg.png) no-repeat center / cover;
+ }
+ .format-offer {
+     cursor: pointer;
+     height: 220px;
+     margin-top: 50px;
+     border: 3px solid #000;
+ }
+ .format-offer:hover {
+     transition: 0.2s;
+     border: 3px solid #f6641a;
+     background-color: #f6641a;
+     color: #fff;
+ }
+ .format-subtitle {
+     margin-top: 50px;
+     text-align: center;
+     font-weight: 700;
+     text-transform: uppercase;
+ }
+ .format-offer__title {
+     text-align: center;
+     margin: 40px 0;
+ }
+ .format-offer__text {
+     text-align: center;
+     margin-bottom: 40px;
+ }
+ /*REVIEWS*/
+ 
+ .reviews-block {
+     position: relative;
+     width: 260px;
+     margin: 87px 40px 0 40px;
+ }
+ .reviews-block__title {
+     margin-top: 35px;
+     font-size: 18px;
+     font-weight: 700;
+ }
+ .reviews-block__title:after {
+     content: '';
+     position: absolute;
+     height: 1px;
+     width: 50px;
+     background-color: #000;
+     top: 210px;
+     left: 50%;
+     margin-left: -25px;
+ }
+ .reviews-block__text {
+     margin-top: 68px;
+     text-align: center;
+     font-style: italic;
+ }
+ .reviews-slide .slick-slide {
+     height: 500px !important;
+ }
+ .reviews-slide .slick-dots {
+     display: none !important;
+ }
+ /*FORM-LESSON*/
+ 
+ .form-lesson {
+     background: url(../img/bg-form.png) no-repeat center / cover;
+ }
+ .form-lesson-block {
+     position: relative;
+     background-color: rgba(0, 0, 0, 0.5);
+     margin-top: 52px;
+     padding: 60px 140px;
+     margin-bottom: 120px;
+ }
+ .form-lesson-input {
+     font-size: 14px;
+     margin-right: 20px;
+ }
+ .form-lesson-label {
+     color: #fff;
+     margin-left: 20px;
+     margin-right: 20px;
+ }
+ .form-lesson-btn {
+     font-size: 14px;
+     cursor: pointer;
+     text-transform: uppercase;
+     padding: 0 40px;
+     border: none;
+     background-color: #ffcc00;
+ }
+ .form-lesson-block__protect {
+     font-weight: 700;
+     color: #ffcc00;
+     position: absolute;
+     bottom: 15px;
+     left: 50%;
+     margin-left: -106px;
+ }
+ /*CONTAKT*/
+ 
+ .contact-subtitle {
+     text-align: center;
+     margin-top: 20px;
+ }
+ .contact-item {
+     margin-top: 64px;
+ }
+ .contact-item__title {
+     margin-bottom: 24px;
+     font-weight: 600;
+     font-size: 20px;
+     text-transform: uppercase;
+ }
+ .contact-item__title1 {
+     margin-bottom: 24px;
+     font-weight: 600;
+     font-size: 20px;
+     text-transform: uppercase;
+	 padding-left: 10px;
+ }
+ .contact-item__avatar {
+     margin-bottom: 24px;
+ }
+ .contact-item__text {
+     line-height: 27px;
+     font-size: 16px;
+	 padding-top: 5px;
+ }
+ .contact-item__text2 {
+     line-height: 27px;
+     font-size: 16px;
+	 padding-top: 5px;
+	 margin-left: -30px;
+ }
+ .contact-item__phone {
+     position: relative;
+ }
+ .contact-item__phone {
+     margin-bottom: 20px;
+ }
+ .contact-item__phone_icon1 {
+     position: relative;
+     left: -40px;
+ }
+ .contact-item__phone_icon2 {
+     position: relative;
+     left: -35px;
+ }
+ .contact-item__email_icon {
+     position: relative;
+     left: -15px;
+ }
+ .contact-item__img {
+     margin-right: 20px;
+ }
+ .contact-item-social {
+     margin-bottom: 20px;
+ }
+ .contact-item-social_icon {
+     margin-right: 10px;
+ }
+ .contact-item-social p {
+     font-size: 14px;
+	 
+ }
+ 
+ .icon-link {
+ padding-left: 10px;
+ padding-top: 35px;
+ background: url("path_to_image") no-repeat;
+ }
+.icon-link-double-pad {
+ padding-left: 0px;
+ background: url("path_to_image") no-repeat;
+}
+
+.email-link-icon {
+ margin-left: 12px;
+ padding-left: 22px;
+ background: url("path_to_image") no-repeat;
+}
+ 
+ 
+ /*FOOTER*/
+ 
+ footer {
+     margin-top: 126px;
+     padding: 50px 0;
+     background-color: #6794a9;
+ }
+ .footer__protect {
+     margin-left: 10px;
+     font-size: 12px;
+     font-weight: 700;
+     color: #fff;
+ }
+ .menu-navigation__footer a {
+     margin-right: 25px;
+     color: #fff;
+ }
+ .menu-navigation__footer a:hover {
+     color: #507a8e;
+ }
+ .footer-icon {
+     margin-right: 10px;
+ }
+ /*MODAL*/
+ 
+ .main-modal {
+     padding: 0 30px;
+ }
+ .main-modal-input {
+     padding: 10px 0 10px 10px;
+     margin-bottom: 20px;
+ }
+ .main-modal__lesson-text {
+     font-weight: 700;
+     font-size: 14px;
+     margin-bottom: 10px;
+ }
+ .main-modal__label {
+     margin-left: 7px;
+     margin-bottom: 0;
+ }
+ .main-modal__check-block {
+     margin-bottom: 15px;
+ }
+ .main-modal__btn {
+     margin: 0 auto;
+     padding: 15px 40px;
+ }
+ .main-modal__protect {
+     text-align: center;
+     font-size: 14px;
+     font-weight: 700;
+     margin-top: 15px;
+ }
+ .close {
+     font-size: 32px;
+ }
+ .modal-format-title {
+     text-align: center;
+     font-weight: 700;
+     font-size: 25px;
+     margin-bottom: 20px;
+ }
+ .modal-format {
+     padding: 20px 45px;
+ }

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Learning English the easy way!" />
+		<title>Constant English</title>
+		<!-- font -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+		<!-- bootstrap 4 -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" >
+		<!-- slider -->
+		<link rel="stylesheet" href="css/Highlight-test.css">
+		<!-- style -->
+		<link rel="stylesheet" href="css/main.css">
+
+	</head>
+	<body>
+		<!-- menu -->
+		<div class="menu d-flex align-items-center ha-header" id="ha-header">
+			<div class="container">
+				<div class="row">
+					<!-- logo -->
+					<div class="col-lg-2">
+						<img src="img/logo.png" alt="Constant English">
+					</div>
+					<div class="col-lg-5 d-flex">
+						<!-- menu-nav -->
+						<nav class="menu-navigation d-flex align-items-center">
+							<ul class="d-flex">
+								<li class="menu-navigation__item">
+									<a href="#main" id="slide-to-main">О нас</a>
+								</li>
+								<li class="menu-navigation__item">
+									<a href="#format" id="slide-to-format">Форматы обучения</a>
+								</li>
+								<li class="menu-navigation__item">
+									<a href="#reviews" id="slide-to-reviews">Отзывы</a>
+								</li>
+								<li class="menu-navigation__item">
+									<a href="#contact" id="slide-to-contact">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-lg-3 d-flex align-items-center ml-auto">
+						<img src="img/icon-phone.png" alt="телефон" class="icon-phone">
+						<!-- phone -->
+						<div class="phone">
+							<p>
+								+7 937 002 00 50
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-2 d-flex align-items-center">
+						<!-- button -->
+						<a class="button" data-toggle="modal" data-target="#main-modal">
+						записаться
+						</a>						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- main-screen -->
+		<div class="header" id="main">
+			<div class="slide-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<h1 class="main-title">
+								Интенсивное обучение Английскому языку
+							</h1>
+							<h2 class="sub-title">
+								Результативно, уникально и весело!
+							</h2>
+						</div>
+						<div class="col-lg-6">
+							<!-- advantages -->
+							<div class="advantages">
+								<div class="advantages_lesson d-flex">
+									<img src="img/1-icon.png" alt="first" class="advantages-img">
+									<div class="adantages-text d-flex flex-column align-self-center">
+										<p class="advantages-main-text">Первый частный урок</p>
+										<p>Всегда бесплатно</p>
+									</div>
+								</div>
+								<div class="advantages_individually d-flex">
+									<img src="img/2-icon.png" alt="first" class="advantages-img">
+									<div class="adantages-text d-flex flex-column align-self-center">
+										<p class="advantages-main-text">Индивидуальный подбор</p>
+										<p>программы обучения</p>
+									</div>
+								</div>
+								<div class="advantages_free d-flex">
+									<img src="img/3-icon.png" alt="first" class="advantages-img">
+									<div class="adantages-text d-flex flex-column align-self-center">
+										<p class="advantages-main-text">Посещение первого клуба</p>
+										<p>бесплатно</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- about -->
+		<section class="about">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="about-block">
+						<div class="about-block__item d-flex">
+							<img src="img/point.png" alt="point" class="about-block__img">
+							<p class="about-block__text">
+								Мы обучаем английскому языку в форматe
+								интенсивныхязыковых клубов и частных уроков.
+							</p>
+						</div>
+						<div class="about-block__item d-flex">
+							<img src="img/point.png" alt="point" class="about-block__img">
+							<p class="about-block__text">
+								Так же мы регулярно публикуем совершенно
+								разные материалы на английскую
+								тематику — цитаты, юмор.
+							</p>
+						</div>
+						<div class="about-block__item d-flex">
+							<img src="img/point.png" alt="point" class="about-block__img">
+							<p class="about-block__text">
+								Разбор сложных вопросов, интересные
+								и малоизвестные моменты языка, этимологию
+								слов и многое другое.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="cool-lg-7">
+					<div class="slider d-flex align-items-center">
+						<div class="row2">
+							<div class="column2">
+								<img src="img/slide-1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+							</div>
+							<div class="column2">
+								<img src="img/slide-2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+							</div>
+							<div class="column2">
+								<img src="img/slide-3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+							</div>
+							<div class="column2">
+								<img src="img/slide-4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+							</div>
+							<div class="column2">
+								<img src="img/slide-5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+							</div>
+							<div class="column2">
+								<img src="img/person-1-1.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+							</div>
+							<div class="column2">
+								<img src="img/person-2-1.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+							</div>
+							<div class="column2">
+								<img src="img/person-3-1.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+							</div>
+							<div class="column2">
+								<img src="img/slide-1.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+							</div>
+							<div class="column2">
+								<img src="img/slide-2.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+							</div>
+							<div class="column2">
+								<img src="img/slide-3.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+							</div>
+							<div class="column2">
+								<img src="img/slide-4.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+							</div>
+							<div class="column2">
+								<img src="img/slide-5.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+							</div>
+							<div class="column2">
+								<img src="img/person-1-1.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+							</div>
+							<div class="column2">
+								<img src="img/person-2-1.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+							</div>
+							<div class="column2">
+								<img src="img/person-3-1.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+							</div>
+						</div>
+						<div id="myModal" class="modal2">
+							<span class="close cursor" onclick="closeModal()">&times;</span>
+							<div class="modal2-content">
+								<div class="mySlides">
+									<div class="numbertext">1 / 16</div>
+									<img src="img/slide-1.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">2 / 16</div>
+									<img src="img/slide-2.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">3 / 16</div>
+									<img src="img/slide-3.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">4 / 16</div>
+									<img src="img/slide-4.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">5 / 16</div>
+									<img src="img/slide-5.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">6 / 16</div>
+									<img src="img/person-1-1.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">7 / 16</div>
+									<img src="img/person-2-1.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">8 / 16</div>
+									<img src="img/person-3-1.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">9 / 16</div>
+									<img src="img/slide-1.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">10 / 16</div>
+									<img src="img/slide-2.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">11 / 16</div>
+									<img src="img/slide-3.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">12 / 16</div>
+									<img src="img/slide-4.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">13 / 16</div>
+									<img src="img/slide-5.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">14 / 16</div>
+									<img src="img/person-1-1.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">15 / 16</div>
+									<img src="img/person-2-1.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">16 / 16</div>
+									<img src="img/person-3-1.jpg" style="width:100%">
+								</div>
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
+								<div class="caption-container">
+									<p id="caption"></p>
+								</div>
+								<!--
+									<div class="column">
+									   <img class="demo cursor" src="img/slide-1.jpg" style="width:100%" onclick="currentSlide(1)" alt="NEED TITLE 1">
+									</div>
+									<div class="column">
+									   <img class="demo cursor" src="img/slide-2.jpg" style="width:100%" onclick="currentSlide(2)" alt="NEED TITLE 2">
+									</div>
+									<div class="column">
+									   <img class="demo cursor" src="img/slide-3.jpg" style="width:100%" onclick="currentSlide(3)" alt="NEED TITLE 3">
+									</div>
+									<div class="column">
+									   <img class="demo cursor" src="img/slide-4.jpg" style="width:100%" onclick="currentSlide(4)" alt="NEED TITLE 4">
+									</div>
+									-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="format" id="format">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h2 class="section-title">
+							Lesson Format
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<h3 class="format-subtitle">
+							Online
+						</h3>
+						<div class="format-offer" data-toggle="modal" data-target=".online-clubs">
+							<h4 class="format-offer__title">
+								<b>Online Clubs</b>
+							</h4>
+							<p class="format-offer__text">
+								Это  разговорные клубы,
+								помогающие быстроосваивать и практиковать навыки
+								английского языка 
+								<br>
+								<br>
+								<b>
+								Click here to read more...
+								</b>
+							</p>
+						</div>
+						<div class="format-offer" data-toggle="modal" data-target=".online-lessons">
+							<h4 class="format-offer__title">
+								<b>Online Lessons</b>
+							</h4>
+							<p class="format-offer__text">
+								Это разговорные, обучающие
+								клубы, которые позволяют  практиковать и быстро освоить навыки английского языка
+								максимально быстро в комфортной среде.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<h3 class="format-subtitle">
+							Offline
+						</h3>
+						<div class="format-offer" data-toggle="modal" data-target=".Offline-clubs">
+							<h4 class="format-offer__title">
+								<b>Offline Clubs</b>
+							</h4>
+							<p class="format-offer__text">
+								Это  разговорные клубы,
+								помогающие быстроосваивать и практиковать навыки
+								английского языка 
+							</p>
+						</div>
+						<div class="format-offer" data-toggle="modal" data-target=".Offline-lessons">
+							<h4 class="format-offer__title">
+								<b>Offline Lessons</b>
+							</h4>
+							<p class="format-offer__text">
+								Инструментальный арсенал тот же, что и онлайн уроки, только ещё включают в себя личный
+								контакт с преподавателем
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="reviews" id="reviews">
+			<div class="container">
+				<div class="row"
+					>
+					<div class="col">
+						<h2 class="section-title">
+							Отзывы
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="reviews-slide d-flex align-items-center">
+							<div class="reviews-block d-flex align-items-center flex-column">
+								<img src="img/person-1.png" alt="">
+								<p class="reviews-block__title">
+									Владимир Антонов
+								</p>
+								<p class="reviews-block__text">
+									Уроки очень понравились. Было увлекательно, легко и все
+									понятно :)
+								</p>
+							</div>
+							<div class="reviews-block d-flex align-items-center flex-column">
+								<img src="img/person-2.png" alt="">
+								<p class="reviews-block__title">
+									Владимир Антонов
+								</p>
+								<p class="reviews-block__text">
+									Преподаватель всегда
+									пунктуален, подготовлен и очень  структурный
+								</p>
+							</div>
+							<div class="reviews-block d-flex align-items-center flex-column">
+								<img src="img/person-3.png" alt="">
+								<p class="reviews-block__title">
+									Владимир Антонов
+								</p>
+								<p class="reviews-block__text">
+									Все очень структурированно и четко .Часовой урок проходит незаметно
+								</p>
+							</div>
+							<div class="reviews-block d-flex align-items-center flex-column">
+								<img src="img/person-4.png" alt="">
+								<p class="reviews-block__title">
+									Владимир Антонов
+								</p>
+								<p class="reviews-block__text">
+									Обаятельный преподаватель, понятно объясняет. Очень хорошо, и структурировано подан материал.
+								</p>
+							</div>
+							<div class="reviews-block d-flex align-items-center flex-column">
+								<img src="img/person-2.png" alt="">
+								<p class="reviews-block__title">
+									Владимир Антонов
+								</p>
+								<p class="reviews-block__text">
+									Уроки очень понравились. Было увлекательно, легко и все
+									понятно :)
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="form-lesson">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h2 class="section-title">
+							Заполните форму
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<form  action="success.php" class="js-form form-lesson-block d-flex" id="popupResult">
+							<input type="text" name="name" required="" placeholder="Введите имя"  class="form-control form__field form-lesson-input">
+							<input type="text" name="tel" required="" placeholder="Телефон"  class="form-control form__field form-lesson-input">
+							<div class="d-flex align-items-center">
+								<input type="checkbox" id="first" name="check[]" value="Занятия online"><br>
+								<label for="first" class="form-lesson-label">Заниматься ONLINE</label>
+							</div>
+							<div class="d-flex align-items-center">
+								<input type="checkbox" id="second" name="check[]" value="Занятия Offline"><br>	
+								<label for="second" class="form-lesson-label">Заниматься Offline</label>
+							</div>
+							<button class="act form-lesson-btn" data-submit>Записаться</button>
+							<p class="form-lesson-block__protect">Ваши данные под защитой</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contact" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h2 class="section-title">
+							Контакты
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<p class="contact-subtitle">
+							Если вы хотите начать заниматься с нами или у вас появились какие-либо вопросы — отправьте нам сообщение или позвоните.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+				<div class="col-lg-3"></div>
+					<div class="col-lg-2">
+						<div class="row">
+							<div class="col-lg-12">
+								<img src="img/avatar.png" />
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-4">
+						<div>
+							<div class="icon-link" >
+								<img src="img/temp_icon_20x20.png" alt="">
+								<img src="img/temp_icon_20x20.png" alt="">
+								<a href="tel:+79370020050">
+									+7 937 002 0050
+								</a>
+							</div>
+						</div>
+						<div class="contact-item__phone d-flex align-items-center">
+							<div class="email-link-icon" >
+								<img src="img/temp_icon_20x20.png" alt="">
+								<a class="icon-link-double-pad" href='mai&#108;&#116;&#111;&#58;i%&#54;E&#102;%&#54;F&#64;c%6Fnst%61nteng&#108;&#105;&#37;73ch&#46;%6&#51;om'>i&#110;&#102;o&#64;&#99;o&#110;st&#97;nt&#101;nglisch&#46;&#99;om</a>							
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-2">
+						<div class="row">
+							<div class="col-lg-12">
+								<img src="img/temp_icon_20x20.png" alt="" />								
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12">
+								<img src="img/temp_icon_20x20.png" alt="" />								
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12">
+								<img src="img/temp_icon_20x20.png" alt="" />								
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3"></div>
+					
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 d-flex align-items-center">
+						<div class="footer-logo">
+							<img src="img/footer-logo.png" alt="">
+						</div>
+						<p class="footer__protect">
+							© Все права защищены 2017   
+						</p>
+					</div>
+					<div class="col-lg-5 d-flex">
+						<!-- menu-nav -->
+						<nav class="menu-navigation d-flex align-items-center">
+							<ul class="d-flex">
+								<li class="menu-navigation__footer">
+									<a href="#">О нас</a>
+								</li>
+								<li class="menu-navigation__footer">
+									<a href="#">Форматы обучения</a>
+								</li>
+								<li class="menu-navigation__footer">
+									<a href="#">Отзывы</a>
+								</li>
+								<li class="menu-navigation__footer">
+									<a href="#">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-lg-2 d-flex align-items-center flex-row-reverse">
+						<a href="#">
+						<img src="img/icon-telegram-white.png" alt="" class="footer-icon">
+						</a>
+						<a href="#">
+						<img src="img/icon-inst-white.png" alt="" class="footer-icon">
+						</a>
+						<a href="#">
+						<img src="img/icon-vk-white.png" alt="" class="footer-icon">
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- modal -->
+		<!-- modal - записаться -->
+		<div class="modal fade" id="main-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Форма обратной связи</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form  action="success.php" class="js-form main-modal" id="popupResult">
+							<div class="main-modal-inputblock d-flex flex-column">
+								<input type="text" name="name" required="" placeholder="Имя"  class="main-modal-input">
+								<input type="text" name="tel" required="" placeholder="Телефон"  class="main-modal-input">			
+							</div>
+							<p class="main-modal__lesson-text">Укажите, какой вид занятий Вас интересует:</p>
+							<div class="d-flex align-items-center main-modal__check-block">
+								<input type="checkbox" id="first" name="check[]" value="Занятия online"><br>
+								<label for="first" class="main-modal__label">Я хочу заниматься ONLINE</label>
+							</div>
+							<div class="d-flex align-items-center main-modal__check-block">
+								<input type="checkbox" id="second" name="check[]" value="Занятия Offline"><br>	
+								<label for="second" class="main-modal__label">Я хочу заниматься Offline</label>
+							</div>
+							<button class="act form-lesson-btn main-modal__btn d-flex" data-submit>Записаться</button>
+							<p class="main-modal__protect">Ваши данные под защитой</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal - Онлайн клубы -->
+			
+			
+			
+			
+			
+			<div class="modal fade online-clubs" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+			      <div class="modal-content modal-format">
+			         <h3 class="modal-format-title">Онлайн клубы</h3>
+			         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium? 
+			      </div>
+			   </div>
+			</div>
+			<!-- modal - Онлайн уроки -->
+			
+			<div class="modal fade online-lessons" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			      <div class="modal-dialog modal-lg">
+			         <div class="modal-content modal-format">
+			            <h3 class="modal-format-title">Онлайн уроки</h3>
+			            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium? 
+			         </div>
+			      </div>
+			   </div>
+			   
+			<!-- modal - Офлайн клубы -->
+			
+			<div class="modal fade Offline-clubs" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			   <div class="modal-dialog modal-lg">
+			      <div class="modal-content modal-format">
+			         <h3 class="modal-format-title">Офлайн клубы</h3>
+			         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium? 
+			      </div>
+			   </div>
+			</div> 
+			
+			<!-- modal - Офлайн уроки -->
+			
+			<div class="modal fade Offline-lessons" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			   <div class="modal-dialog modal-lg">
+			      <div class="modal-content modal-format">
+			         <h3 class="modal-format-title">Офлайн уроки</h3>
+			         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates officia a inventore velit natus veniam animi molestias provident fuga mollitia perferendis aliquid eligendi sapiente ad, nostrum iste ipsa laudantium?  
+			      </div>
+			   </div>
+			</div> 
+			
+			<!--script-->
+		<!-- jquery -->
+		<script src="js/jquery.js"></script>
+		<!-- slider -->
+		<script src="js/Highlight-test.js"></script>
+		<!-- ajax -->
+		<script src="js/popper.min.js" ></script>
+		<!-- bootstrap -->
+		<script src="js/bootstrap.js" ></script>
+		<!-- menu -->
+		<script src="js/modernizr.custom.js"></script>
+		<!-- js -->
+		<script src="js/main.js"></script>
+
+	</body>
+</html>
