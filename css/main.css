@@ -133,10 +133,20 @@
      margin-left: 70px;
      margin-top: 31px;
  }
+ /* [LY] Added these */
+ .advantages_4 {
+	margin-left: 20px;
+	margin-top: 30px;
+ }
+ .advantages_5 {
+	margin-left: -30px;
+	margin-top: 30px;
+ }
  /*ABOUT*/
  
+ /* [LY] disabled margin here - added content fits without it */
  .about-block {
-     margin: 107px 0;
+     /*margin: 107px 0;*/
  }
  .about-block__item {
      margin-bottom: 32px;
@@ -222,6 +232,10 @@
  }
  /*REVIEWS*/
  
+ /* [LY] Added this to space rows better */
+ .reviews-row {
+	 margin: 10px 0;
+ }
  .reviews-block {
      position: relative;
      width: 260px;
@@ -242,9 +256,10 @@
      left: 50%;
      margin-left: -25px;
  }
+ /* [LY] New layout doesn't need the margin and alignment, removed them */
  .reviews-block__text {
-     margin-top: 68px;
-     text-align: center;
+     /*margin-top: 68px;
+     text-align: center;*/
      font-style: italic;
  }
  .reviews-slide .slick-slide {
@@ -361,17 +376,18 @@
  .icon-link {
  padding-left: 10px;
  padding-top: 35px;
- background: url("path_to_image") no-repeat;
+ background: url("/img/temp_icon_20x20.png") no-repeat;
  }
 .icon-link-double-pad {
  padding-left: 0px;
- background: url("path_to_image") no-repeat;
+ background: url("/img/temp_icon_20x20.png") no-repeat;
 }
 
 .email-link-icon {
  margin-left: 12px;
  padding-left: 22px;
- background: url("path_to_image") no-repeat;
+ background: url("/img/temp_icon_20x20.png") no-repeat;
+ background: url("/img/temp_icon_20x20.png") no-repeat;
 }
  
  

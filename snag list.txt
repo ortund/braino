@@ -1,0 +1,20 @@
+1) top menu weird movements when clicked on button in top menu
+2) top menu add waht'sapp icon
+3) adding 2 more orange round selling points
+4) about us - 2 more points on the left, plus 1st line bold
+5) section "lesson format"
+6) feedback layout change - 2 columns with icon next to text, set across left/right "pages"
+   Javascript can be written to show/hide feedback groups in order.
+
+Resolutions:
+
+1) Top menu shifts position because scrollbar disappears when the modal window is opened.
+2) Whatsapp icon added
+3) Added icons with identical content to current 3rd icon - spacing might need to be better adjusted
+4) Added about us points identical to current 3rd point
+5) Unable to download pictured from Skype so I haven't done this one. 
+6) Changed to a 2 column layout with photos to the left of the person's name and comment.
+
+For point 5:
+
+Create images that feature colored triangles in the corners and set the background to the container div to use each image to form the diamond shape in the middle. There shouldn't be any need to manipulate content much.
